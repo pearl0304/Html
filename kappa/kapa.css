@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+header{
+    height: 65px;
+    background-color: #e70404;
+    position: relative;
+
+}
+
+header .pc{
+    display: none;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 24px;
+    
+    
+}
+header h1 .m{
+    vertical-align: top;
+     height: 17px;
+    
+}
+
+header .opn{
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 63px;
+    height: 65px;
+    background-color: #333;
+
+}
+
+header .opn img{width: 25px;}
+
+header .my{
+    position: absolute;
+    top :0;
+    right: 0;
+    width: 63px;
+    height: 65px;
+    background-color: #222;
+}
+
+header .my .m{width: 25px;}
+
+header nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    overflow-y: scroll;
+    transition: left 0.4s;
+ 
+}
+
+header nav .util{
+    height: 65px;
+    display: flex;
+}
+
+header nav .util button{
+    width: 65px;
+    height: 65px;
+}
+
+header nav .cls{
+    background-color: #fff;
+}
+
+header nav .cls img{width: 22px;}
+
+header nav .submit{
+    background-color: #333;
+}
+
+header nav .util .submit img{width: 23px;}
+
+
+
+header nav .search{
+    width: calc(100% -65px);
+    font-size: 0;
+}
+
+header  nav .search input{
+    background-color: #333;
+    border: 0;
+    height: 100%;
+    width: calc(100% - 65px);
+    font-size: 16px;
+    vertical-align: top;
+}
+
+header .gnb li{
+    
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #333;
+    border-top: 1px solid #666;
+}
+
+header .gnb li a{
+    padding: 20px;
+    display: block
+}
+
+header .gnb li:nth-child(7),
+header .gnb li:nth-child(8){
+    background-color: #e70404;
+}
+
+.bnr .pc{
+    display: none;
+}
+
+.bnr img{width: 100%; height: auto;}
+
+.bnr{
+    font-size: 0;
+}
+
+
+.main{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+
+
+.main .box{
+    width: 50%;
+    position: relative;
+    font-size: 0;
+}
+
+.main .box a > img{
+    width: 100%;
+}
+
+.main .txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0, 0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: :all 0.4s;
+}
+
+ .main .txt .ico{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 20px;
+
+
+} 
+    
+.main .box:hover .txt{
+opacity: 1;
+}
+
+
+@media all and (min-width :960px){
+    .main .box{
+        width: 33.333%;
+    }
+
+}
+
+
+
+
+@media all and (min-width : 768px){
+.bnr img.m{display: none;}
+.bnr img.pc{display: inline-block;}
+
+@media all and (min-width : 1260px){
+
+img.m{display: none;}
+img.pc{display: inline-block;}
+
+
+header {
+    display: flex;
+    position: relative;
+}
+
+header h1{
+  width: 10%;
+  padding-top: 25px;
+  font-size: 0; /*공간없애기*/
+}
+
+header .opn,.cls{
+    display: none;
+}
+button.my{width: 65px;}
+
+header nav{
+    position: unset;
+    overflow: unset;
+    width: calc(90%-130px);
+}
+
+header nav .util{
+    position: absolute;
+    right: 65px;
+}
+
+
+header nav .util .search{
+    width: unset;
+}
+
+header nav .util input{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background-color: #000000;
+    transition: all 0.4s;
+    height: 0;
+}
+
+header nav .util:hover input{height: 65px;}
+header nav .util input:focus{width: 385px;}
+
+
+header nav .gnb{
+    display: flex;  
+}
+
+header nav .gnb li{
+    height: 65px;
+    width: 11.7%;
+    border-top: 0;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 65px;
+    font-size: 12px;
+
+}
+
+header nav .gnb li a{
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+

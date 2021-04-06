@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카파</title>
+    <link href="kapa.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">
+                <img class ="m" src="images/logo_m.gif">
+                <img class="pc" src="images/logo_d.gif">
+            </a>   
+        </h1>
+
+        <button class="opn">
+            <img src="images/btn_menu.gif" alt="">
+        </button>
+
+        <button class="my">
+                <img src="images/btn_member_m.gif" alt="">
+                <img src="images/btn_member_.gif" alt="">
+        </button>
+        
+
+        <nav>
+            <div class="util">
+                <button class="cls">
+                    <img src="images/btn_menu_close.gif" alt="">
+                </button>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button class="submit">
+                        <img class="pc" src="images/btn_srh.gif" alt="">
+                        <img class="m" src="images/btn_srh_m.gif" alt="">
+                    </button>
+                                       
+                </div> <!--search-->
+            </div> <!--util-->
+            <ui class="gnb">
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ORIGIN</a></li>
+                <li><a href="#">4TEMS</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CAMPAIGN</a></li>
+                <li><a href="#">POP-UP STORE</a></li>
+            </ui>
+
+
+        </nav>
+
+    </header>
+
+    <section class="bnr">
+        <a href="">
+            <img class ="m" src="images/sliderM1.jpg" alt="">
+            <img class ="pc" src="images/slider1.jpg" alt="">
+            
+        </a>
+    </section>
+
+    <section class="main">
+        <div class="box">
+            <a href="#">
+                <img src="images/bn1.jpg"alt="">
+
+                <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p>  
+                    <img class="ico" src="images/icon_blog.png" alt="">
+                </div>
+            </a>
+        </div><!--box-->
+
+        <div class="box">
+             <a href="#">
+                 <img src="images/bn2.jpg"alt="">
+
+                 <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p> 
+                    <img class="ico" src="images/icon_blog.png" alt=""> 
+                </div>
+            </a>
+        </div><!--box-->
+
+        <div class="box">
+            <a href="#">
+                <img src="images/bn3.jpg"alt="">
+
+                <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p>  
+                    <img class="ico" src="images/icon_blog.png" alt="">
+                 </div>
+            </a>
+        </div><!--box-->
+
+        <div class="box">
+            <a href="#">
+                <img src="images/bn4.jpg"alt="">
+
+                <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p>  
+                    <img class="ico" src="images/icon_blog.png" alt="">
+                </div>
+            </a>
+        </div><!--box-->
+
+        <div class="box">
+            <a href="#">
+                <img src="images/bn5.jpg"alt="">
+
+                <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p>  
+                    <img class="ico" src="images/icon_blog.png" alt="">
+                </div>
+            </a>
+        </div><!--box-->
+
+        <div class="box">
+            <a href="#">
+                <img src="images/bn6.jpg"alt="">
+
+                <div class="txt">
+                    <p>PARK SU JIN <br> PERFCT FIT STYLE</p>  
+                    <img class="ico" src="images/icon_blog.png" alt="">
+                </div>
+            </a>
+        </div><!--box-->
+
+    </section>
+    
+
+    <script>
+        var nav = document.querySelector("nav")
+                var opn = document.querySelector(".opn")
+                var cls = document.querySelector(".cls")
+
+
+                opn.addEventListener("click",function(){
+                    nav.style.left=0
+
+                })
+
+                cls.addEventListener("click",function(){
+                    nav.style.left= "-100%"
+                })
+
+    </script>
+
+
+    
+</body>
+</html>
