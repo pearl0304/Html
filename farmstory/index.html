@@ -17,7 +17,6 @@
         #wrapper {
             width: 980px;
             height: auto;
-            border: 1px solid red;
             margin: 0 auto;
         }
 
@@ -56,7 +55,7 @@
             float: left;
             width: 20%;
             height: 100%;
-            background-image: url('../img/head_menu_line.png');
+            background-image: url('./img/head_menu_line.png');
             background-repeat: no-repeat;
             background-position-y: -6px;
         }
@@ -116,6 +115,83 @@
         main > .info {
             height: 154px;
         }
+        .slider{
+            position: relative;
+        }
+
+        main .slider ul{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border:red 1px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main .slider ul li{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px orange;
+            box-sizing: border-box;
+        }
+        .slider ul li:nth-child(1){left: 0; top: 0;}
+        .slider ul li:nth-child(2){left: 100%; top: 0;}
+        .slider ul li:nth-child(3){left: 200%; top: 0;}
+
+        main .slider>img{
+            position: absolute;
+            left: 36px;
+            top: 46px;
+        }
+
+        main .slider div{
+            width: 230px;
+            height: 312px;
+            background: url('./img/main_banner_bg.jpg') no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        main .banner a{
+            display: block;
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+        main .banner a img{
+            padding: 12px;
+        }
+
+        main .banner a:nth-child(1){background-image: url("img/main_banner_sub1_bg.jpg");}
+        main .banner a:nth-child(2){background-image: url("img/main_banner_sub2_bg.jpg");}
+        
+        main .latest > div{
+            position: relative;
+            width: 33.33%;
+            height: 100%;
+            float: left;
+            border: 1px solid;  
+            box-sizing: border-box;  
+        }
+        main .latest > div >img:nth-child(1){
+            position: absolute;
+            left:0;
+            top: 16px;
+        }
+        main .latest > div >img:nth-child(2){
+            position: absolute;
+            left: 0;
+            bottom: 16px;
+        }
+        main .latest > div > table {
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+        }
+        main .latest > div > table tr{}
+        main .latest > div > table tr >td{}
+        main .latest > div > table tr >td:nth-child(2){}
 
         /* 푸터영역 */
         footer {
@@ -167,11 +243,63 @@
             </ul>
         </header>
         <main>
-            <div class="slider"></div>
-            <div class="banner"></div>
-            <div class="latest"></div>
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="슬라이드 이미지"></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="슬라이드 이미지"></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="슬라이드 이미지"></li>
+                </ul>
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리">
+
+                <div>
+                    <img src="img/main_banner_txt.png">
+                    <img src="img/main_banner_tit.png">
+                    <img src="img/main_banner_img.png">
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="./img/main_banner_sub1_tit.png"></a>
+                <a href="#"><img src="./img/main_banner_sub2_tit.png"></a>
+            </div>
+            <div class="latest">
+                <div>
+                    <img src="./img/main_latest1_tit.png" alt="텃밭가꾸기">
+                    <img src="./img/main_latest1_img.jpg" alt="이미지">
+                    <table border="1">
+                        <tr>
+                            <td></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="info"></div>
         </main>
+
         <footer>
             <img src="./img/footer_logo.png" alt="로고"/>
             <p>
@@ -182,5 +310,6 @@
             </p>
         </footer>
     </div>
+
 </body>
 </html>
