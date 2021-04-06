@@ -1,0 +1,67 @@
+.movrec{width: 1500px; height:450px;}
+.movrecwrap{width: 1500px; height: 450px;}
+.movrecbox h3{float: left;padding: 10px 0;}
+.movrecbox h4{float: right;padding: 10px 0;}
+.movrecslide{
+    width: 1500px; height: 450px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.movrecimgslide{width: 1500px; height: 450px;overflow: hidden;}
+.movrecimgs{width: 4800px; height:430px; display: flex; justify-content: space-between;}
+.movrecimgbox{width: 290px; height: 410px;margin-right: 12px; flex-wrap: wrap;}
+.movrecimgbox:nth-child(5n){margin-right:none;}
+.movrecimgbox img{width: 290px;height: 410px;cursor: pointer;}
+.movrecimgbox .sbo{width: 290px;height: 40px; line-height: 40px;font-size: 18px; font-weight: bold;}
+.movrecimgbox .sbo p{margin-left: 10px;}
+
+
+.movrec_prv{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    left: 0px;
+    top:160px;
+    width: 30px; height: 50px;
+    line-height: 30px;  
+    background-color: rgba(05, 0, 0, 0.3);
+    float: left;
+    cursor: pointer;
+}
+.movrec_nxt{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    top:160px;
+    width: 30px; height: 50px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: right; 
+    cursor: pointer;
+}
+.movrec_btn{display: none;}
+.movrec_prv.off,.movrec_nxt.off{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

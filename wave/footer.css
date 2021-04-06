@@ -1,0 +1,15 @@
+footer{width: 100%; height: 150px;}
+.footerwrap{width: 1500px; height: 30px;}
+.footl{width: 1000px;float: left;}
+.footl li{float: left;margin-right: 20px; font-size: 14px; font-weight: bold;}
+.footl li:nth-child(5){color: #ccc;}
+.footl li:hover{color: royalblue;}
+.dropbox{width: 500px;float: right;}
+.drop{display: flex;}
+.drop1{margin-right: 2px;float: left;width: 100px; height: 40px;text-align: center;background-color: #222;}
+.drop1 p{background-color: #222;margin-top: 8px;}
+.drop2{width: 200px; height: 40px; border: none;cursor: pointer;background-color: #222;margin-right: 20px;}
+.drop3{width: 250px;}
+.drop3 img{margin-right: 5px; margin-top: 5px;}
+.foota{ width: 1500px;font-size: 13px;}
+.foota p{margin: 20px 0;}

@@ -1,0 +1,67 @@
+.orinalt{width: 1500px; height:450px;}
+.orinalwrap{width: 1500px; height: 450px;}
+.orinalbox h3{float: left;padding: 10px 0;}
+.orinalbox h4{float: right;padding: 10px 0;}
+.orinalslide{
+    width: 1500px; height: 450px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.orinalimgslide{width: 1500px; height: 450px;overflow: hidden;}
+.orinalimgs{width: 4800px; height:430px; display: flex; justify-content: space-between;}
+.orinalimgbox{width: 290px; height: 410px;margin-right: 12px; flex-wrap: wrap;}
+.orinalimgbox:nth-child(5n){margin-right:none;}
+.orinalimgbox img{width: 290px;height: 410px;cursor: pointer;}
+.orinalimgbox .sbo{width: 290px;height: 40px; line-height: 40px;font-size: 18px; font-weight: bold;}
+.orinalimgbox .sbo p{margin-left: 10px;}
+
+
+.orinal_prv{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    left: 0px;
+    top:160px;
+    width: 30px; height: 50px;
+    line-height: 30px;  
+    background-color: rgba(05, 0, 0, 0.3);
+    float: left;
+    cursor: pointer;
+}
+.orinal_nxt{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    top:160px;
+    width: 30px; height: 50px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: right; 
+    cursor: pointer;
+}
+.orinal_btn{display: none;}
+.orinal_prv.off,.orinal_nxt.off{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

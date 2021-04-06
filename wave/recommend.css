@@ -1,0 +1,68 @@
+.recommend{width: 1500px; height: 400px;padding-top: 50px;}
+.recowrap{width: 1500px; height: 400px;}
+.recobox h3{float: left;padding: 10px 0;}
+.recoslide{
+    width: 1500px; height: 400px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+}
+.imgslider{width: 1500px; 
+    height: 400px;
+    overflow: hidden;
+}
+.imgsr{width: 5000px; 
+    height:400px; 
+    display: flex; 
+    justify-content: space-between;
+}
+.recoimgbox{width: 500px; height: 400px;margin-right: 7px; flex-wrap: wrap; align-items: center;}
+.recoimgbox:nth-child(3n){margin-right:none;}
+.recoimgbox img{width: 500px;height: 300px;cursor: pointer;margin-top: 5px;}
+.recoimgbox .sbr{
+    width: 500px;
+    height: 20px; 
+    line-height: 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    background-color:   #222;
+    float: left;
+    padding: 5px 0;
+}
+.recoimgbox .sbr p{background-color:   #222; padding: 5px;}
+
+.reco_prv{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    left: 0px;
+    top:130px;
+    width: 30px; height: 50px;
+    line-height: 30px;  
+    background-color: rgba(05, 0, 0, 0.3);
+    float: left;
+    cursor: pointer;
+}
+.reco_nxt{
+    height: 50px;
+    text-align: center;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    top:130px;
+    width: 30px; height: 50px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: right; 
+    cursor: pointer;
+}
+.recobtn{display: none;}
+.reco_prv.off,.reco_nxt.off{
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+
